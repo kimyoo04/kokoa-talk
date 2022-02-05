@@ -1,0 +1,30 @@
+.status-bar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 5px 3px;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.status-bar__coloumn {
+  width: 33%;
+}
+
+.status-bar__coloumn:first-child span {
+  margin-right: 5px;
+}
+.status-bar__coloumn:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__coloumn:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.status-bar__coloumn .fa-battery-full {
+  margin: 0px 5px;
+}
