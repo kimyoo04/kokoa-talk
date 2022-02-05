@@ -8,6 +8,7 @@
     <title>Welcome to Kokoa Clone</title>
   </head>
   <body>
+    <!-- 최상단 상태 창 시작 -->
     <div class="status-bar">
       <div class="status-bar__coloumn">
         <span>No Service</span>
@@ -22,24 +23,30 @@
         <i class="fas fa-bolt"></i>
       </div>
     </div>
+    <!-- 최상단 상태 창 끝 -->
+    <!-- 웰컴 해더 시작 -->
     <header class="welcome-header">
       <h1 class="welcome-header__title">Welcome to Kokao Clone</h1>
       <p class="welcome-header__text">
         If you have a kokoa Account, log in with your email or phone number
       </p>
     </header>
-
+    <!-- 웰컴 해더 끝 -->
+    <!-- 로그인 폼 시작 -->
     <form action="friends.html" method="get" id="login-form">
       <input type="text" placeholder="Email or phone number" />
       <input type="password" placeholder="Password" />
       <input type="submit" value="Log In" />
       <a href="#">Find Kakao Account or Password</a>
     </form>
+    <!-- 로그인 폼 끝 -->
 
+    <!-- 화면 비율 제한 기능 -->
     <div id="no-mobile">
       <span>Your screen is too big ㅠㅠ</span>
     </div>
 
+    <!-- fontawesome 아이콘 가져오기 -->
     <script
       src="https://kit.fontawesome.com/f5b2afa047.js"
       crossorigin="anonymous"
