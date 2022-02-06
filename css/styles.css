@@ -28,10 +28,12 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+/* 메인 화면의 양쪽 패딩 적용 */
 .main-screen {
   padding: 0px var(--horizontal-space);
 }
 
+/* 적용된 것 못 찾겠음... */
 .relatived {
   position: relative;
 }
