@@ -1,3 +1,7 @@
+/* ==============================================================
+설정 리스트의 각 설정
+=================================================================
+*/
 .settings__setting {
   padding: 20px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -7,12 +11,14 @@
   justify-content: space-between;
 }
 
+/* 아이콘 스타일 */
 .settings__setting i {
   margin-right: 20px;
   font-size: 22px;
   opacity: 0.8;
 }
 
+/* 오른쪽 column 텍스트 투명도 조절 */
 .settings__setting-column:last-child {
   opacity: 0.5;
 }

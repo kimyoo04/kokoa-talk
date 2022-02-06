@@ -1,3 +1,9 @@
+/* ==============================================================
+웰컴 해더
+=================================================================
+*/
+
+/* 웰컴헤더 가운데 정렬, 위아래 margin 90px */
 .welcome-header {
   margin: 90px 0px;
   text-align: center;
@@ -6,22 +12,31 @@
   align-items: center;
 }
 
+/* 웰컴 헤더의 제목 */
 .welcome-header__title {
   margin-bottom: 40px;
   font-size: 25px;
 }
 
+/* 웰컴 헤더의 글, 글 폭 조절, 투명도 */
 .welcome-header__text {
   width: 50%;
   opacity: 0.7;
 }
 
+/* ==============================================================
+로그인 폼
+=================================================================
+*/
+
+/* 로그인 폼 column 전환, 좌우 margin */
 #login-form {
   display: flex;
   flex-direction: column;
   margin: 0px 30px;
 }
 
+/* input 스타일 */
 #login-form input {
   padding: 15px 0px;
   border: none;
@@ -29,25 +44,30 @@
   margin-bottom: 25px;
 }
 
+/* type이 submit 제외, border-bottom 생성 */
 #login-form input:not([type="submit"]) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.2s ease-in-out;
 }
 
+/* placeholder 색상 변경 */
 #login-from input::placeholder {
   color: rgba(0, 0, 0, 0.4);
 }
 
+/* 포커스 활성화 - border 컬러 yellow로 변환 */
 #login-form input:focus {
   border-color: var(--yellow);
 }
 
+/* 로그인 버튼 스타일 */
 #login-form input[type="submit"] {
   background-color: var(--yellow);
   cursor: pointer;
   border-radius: 5px;
 }
 
+/* 계정, 비밀번호 찾기 스타일 */
 #login-form a {
   text-align: center;
   text-decoration: none;

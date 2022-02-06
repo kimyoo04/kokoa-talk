@@ -1,8 +1,14 @@
+/* ==============================================================
+chat 페이지 설정
+=================================================================
+*/
+/* 스크롤 적용 */
 #chat-screen {
   height: 500vh;
   background-color: #abc1d1;
 }
 
+/* 최상단 상태창, alt-헤더 스타일 */
 #chat-screen .status-bar,
 #chat-screen .alt-header {
   position: fixed;
@@ -12,10 +18,12 @@
   box-sizing: border-box;
 }
 
+/* 헤더 위치 조정 */
 #chat-screen .alt-header {
   top: 10px;
 }
 
+/* main 대화 창 fadein  */
 @keyframes fadeIn {
   from {
     transform: translateY(30px);
@@ -27,6 +35,11 @@
   }
 }
 
+/* ==============================================================
+main 대화 창 스타일
+=================================================================
+*/
+
 .main-chat {
   margin-top: 120px;
   display: flex;
@@ -35,10 +48,12 @@
   animation: fadeIn 0.8s linear;
 }
 
+/* 상태 창 레이어 우선순위 */
 #chat-screen .status-bar {
   z-index: 2;
 }
 
+/* alt-헤더 레이어 우선순위 */
 #chat-screen .alt-header {
   top: 10px;
   z-index: 1;
@@ -58,6 +73,7 @@
   margin-bottom: 25px;
 }
 
+/* 상대방 프로필 이미지 스타일 */
 .message-row img {
   width: 50px;
   height: 50px;
@@ -75,6 +91,7 @@
   align-items: flex-end;
 }
 
+/* 상대방 메시지 박스 모양, 텍스트 스타일 */
 .message__bubble {
   padding: 13px;
   font-size: 18px;
@@ -84,6 +101,7 @@
   margin-right: 5px;
 }
 
+/* 상대방 이름, 메시지 보낸 시간 텍스트 스타일 통일 */
 .message__time,
 .message__author {
   font-size: 14px;
@@ -94,6 +112,7 @@
   justify-content: flex-end;
 }
 
+/* 자신 메시지 박스 모양, 텍스트 스타일 */
 .message-row--own .message__bubble {
   background-color: var(--yellow);
   border-top-right-radius: 0px;
@@ -102,10 +121,17 @@
   margin-right: 0px;
 }
 
+/* 시간, 메시지 위치 반전 */
 .message-row--own .message__info {
   flex-direction: row-reverse;
 }
 
+/* ==============================================================
+메시지 입력 창
+=================================================================
+*/
+
+/* 메시지 입력 창 전체 스타일 */
 .reply {
   position: fixed;
   bottom: 0;
@@ -119,6 +145,7 @@
   transition: all 0.3s ease-in-out;
 }
 
+/* 2 column의 폭 비율 1:9 */
 .reply .reply__column:first-child {
   width: 10%;
 }
@@ -132,6 +159,7 @@
   opacity: 0.5;
 }
 
+/* 메시지 입력 창의 input 스타일 */
 .reply input {
   padding: 9px 0 9px 10px;
   width: 100%;
@@ -141,18 +169,21 @@
   transition: all 0.3s ease-in-out;
 }
 
-.reply__column:last-child > i,
+/* 오른쪽 버튼 위치 조정 */
 .reply__column:last-child button {
   position: absolute;
-  right: -3px;
+  right: 3px;
   top: 2px;
 }
 
+/* 오른쪽 아이콘 위치 조정 */
 .reply__column:last-child > i {
+  position: absolute;
   right: 43px;
   top: 9px;
 }
 
+/* 오른쪽 버튼 스타일 */
 .reply__column button {
   background-color: var(--yellow);
   border: none;
@@ -165,6 +196,12 @@
   opacity: 1;
 }
 
+/* ==============================================================
+대화 창 상태 적용
+=================================================================
+*/
+
+/*  */
 .reply__column button:focus,
 .reply__column button:active {
   outline: none;
@@ -176,17 +213,20 @@
   transition: opacity 0.3s ease-in-out;
 }
 
+/* 추가 기능 아이콘, 이모티콘 아이콘, 버튼 투명화 */
 .reply:focus-within .reply__column:first-child,
 .reply:focus-within .fa-smile-wink,
 .reply:focus-within button {
   opacity: 0;
 }
 
+/* input 위치 변화 */
 .reply:focus-within input {
   width: 95vw;
-  transform: translateX(-13.5%) translateY(-80px);
+  transform: translateX(-13%) translateY(-80px);
 }
 
+/* input을 제외한 메시지 입력 창 아래로 숨김 */
 .reply:focus-within {
   transform: translateY(80px);
 }

@@ -1,3 +1,8 @@
+/* ==============================================================
+추천 친구
+=================================================================
+*/
+
 .recommended-friends {
   padding: 25px 0px;
   margin: 25px 0px;
@@ -18,6 +23,11 @@
   text-align: center;
 }
 
+/* ==============================================================
+오픈 채팅 (해더)
+=================================================================
+*/
+
 .open-chat__header {
   display: flex;
   justify-content: space-between;
@@ -28,6 +38,11 @@
 .open-chat__header span {
   opacity: 0.6;
 }
+
+/* ==============================================================
+오픈 채팅 포스팅 글
+=================================================================
+*/
 
 .open-post {
   display: flex;
@@ -58,11 +73,13 @@
   margin-right: 5px;
 }
 
+/* 000 members */
 .open-post__member-count {
   font-size: 14px;
   opacity: 0.5;
 }
 
+/* | */
 .open-post__members .divider {
   width: 1px;
   height: 15px;
@@ -70,6 +87,7 @@
   background-color: var(--gray-icon);
 }
 
+/* Active / inactive */
 .open-post__member-status {
   color: #ffb0e0;
 }
@@ -84,6 +102,7 @@
   border-radius: 10px;
 }
 
+/* ♥ */
 .open-post__heart-count {
   display: flex;
   position: absolute;
@@ -97,10 +116,12 @@
   align-items: center;
 }
 
+/* 000 */
 .open-post__heart-count span {
   margin-left: 3px;
 }
 
+/* 하트 박동 효과 */
 @keyframes heartBeat {
   0% {
     color: white;
@@ -116,6 +137,7 @@
   }
 }
 
+/* 하트 박동 효과 */
 .open-post__heart-count:hover i {
   will-change: transform;
   animation: heartBeat 1s linear infinite;

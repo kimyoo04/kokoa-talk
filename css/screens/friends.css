@@ -1,3 +1,8 @@
+/* ==============================================================
+친구 이름 검색 창
+=================================================================
+*/
+
 #friends-display-link {
   display: block;
   padding: 15px 0px;
@@ -12,16 +17,24 @@
   color: var(--gray-text);
 }
 
+/* ==============================================================
+메인 friends 페이지, Channel 프로필
+=================================================================
+*/
+
+/* 좌우 padding 적용 */
 .friends-screen {
   padding: 0px var(--horizontal-space);
 }
 
+/* 오른쪽 coloumn 스타일 */
 .firends-screen__channel {
   margin-top: 25px;
   border-top: var(--main-border);
   padding-top: 15px;
 }
 
+/* 오른쪽 column의 해더 스타일 */
 .friends-screen__channel-header {
   display: flex;
   color: var(--gray-icon);
@@ -29,6 +42,7 @@
   justify-content: space-between;
 }
 
+/* 코코아톡 로딩 화면 기능 */
 @keyframes hideSplashScreen {
   from {
     opacity: 1;
@@ -39,6 +53,7 @@
   }
 }
 
+/* 코코아톡 로딩 화면 스타일 */
 .splash-screen {
   background-color: var(--yellow);
   position: absolute;
