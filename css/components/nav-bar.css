@@ -1,3 +1,9 @@
+/* ==============================================================
+네비게이션 바
+=================================================================
+*/
+
+/* 전체 스타일 */
 .nav {
   position: fixed;
   bottom: 0;
@@ -7,16 +13,20 @@
   box-sizing: border-box;
   border-top: 1px solid rgba(121, 121, 121, 0.3);
 }
+
+/* 네비게이션 버튼 간 조정 */
 .nav__list {
   display: flex;
   justify-content: space-between;
 }
 
+/* 버튼 조정 */
 .nav__link {
   position: relative;
   color: #2e363e;
 }
 
+/* 새로운 메시지 표시 아이콘 y축 이동, 회전 */
 @keyframes notificationAnimation {
   0% {
     transform: none;
@@ -36,6 +46,7 @@
   animation: notificationAnimation 2s ease-in-out infinite;
 }
 
+/* 네비게이션 바 버튼 위로 등장 */
 @keyframes appearBtnAnimation {
   from {
     opacity: 0;
@@ -51,6 +62,7 @@
   animation: appearBtnAnimation 0.3s ease-in-out forwards;
 }
 
+/* 왼쪽부터 버튼 한개씩 딜레이 */
 .nav__link:nth-child(2) {
   animation-delay: 0.2s;
 }

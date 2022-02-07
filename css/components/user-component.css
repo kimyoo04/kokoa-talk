@@ -1,14 +1,22 @@
+/* ==============================================================
+유저 정보 ( 2 column )
+=================================================================
+*/
+
+/* 프로필 간 디폴트 간격 */
 .user-component {
   justify-content: space-between;
   margin: 15px 0;
 }
 
+/* column 위치 디폴트 설정 */
 .user-component,
 .user-component__column:first-child {
   display: flex;
   align-items: center;
 }
 
+/* 프로필 사진 디폴트 크기, 위치 */
 .user-component__avatar {
   width: 70px;
   height: 70px;
@@ -16,33 +24,39 @@
   margin-right: 20px;
 }
 
+/* 프로필 이름 폰트 스타일 */
 .user-component__title {
   font-weight: 600;
   font-size: 22px;
 }
 
+/* 프로필 이름 밑의 글 */
 .user-component__subtitle {
-  color: rgba(0, 0, 0, 0, 5);
+  color: rgba(0, 0, 0, 5);
   font-size: 17px;
   margin-top: 8px;
 }
 
+/* 프로필 사진 xl 크기 */
 .user-component__avatar--xl {
   width: 80px;
   height: 80px;
   border-radius: 36px;
 }
 
+/* 프로필 사진 sm 크기 */
 .user-component__avatar--sm {
   width: 60px;
   height: 60px;
   border-radius: 27px;
 }
 
+/* 프로필 이름 굵지 않게 */
 .user-component__title--not-bold {
   font-weight: 400;
 }
 
+/* 오른쪽 column 스타일 */
 .user-component__column:last-child {
   color: var(--gray-text);
   display: flex;
@@ -50,6 +64,7 @@
   align-items: flex-end;
 }
 
+/* chats의 오른쪽 column 메시지 보낸시간 텍슨트 스타일 */
 .user-component__time {
   display: block;
   font-size: 14px;

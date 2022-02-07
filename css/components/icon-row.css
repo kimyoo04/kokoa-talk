@@ -1,8 +1,13 @@
+/* ==============================================================
+기능 아이콘 리스트 (4 column) (아이콘, 텍스트)
+=================================================================
+*/
 .icon-row {
   display: flex;
   justify-content: space-between;
 }
 
+/* 각 column 별 정렬 */
 .icon-row__icon {
   display: flex;
   flex-direction: column;

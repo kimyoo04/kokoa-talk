@@ -1,3 +1,9 @@
+/* ==============================================================
+alt-header ( 3 column )
+=================================================================
+*/
+
+/* 전체 스타일 설정 */
 .alt-header {
   display: flex;
   padding: var(--horizontal-space);
@@ -7,6 +13,7 @@
   padding-top: 30px;
 }
 
+/* 위치 조정 */
 .alt-header__column {
   width: 33%;
 }
@@ -16,19 +23,24 @@
   font-size: 28px;
 }
 
+/* 왼쪽 위치 조정 */
 .alt-header__column:first-child {
   margin-right: auto;
 }
+
+/* 가운데 위치 조정 */
 .alt-header__column:nth-child(2) {
   text-align: center;
 }
 
+/* 오른쪽 위치 조정 */
 .alt-header__column:last-child {
   margin-left: auto;
   display: flex;
   justify-content: flex-end;
 }
 
+/* chat 에서만 적용됨 */
 .alt-header__column span:last-child {
   margin-left: 20px;
 }

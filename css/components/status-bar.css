@@ -1,3 +1,9 @@
+/* ==============================================================
+최상단 상태 창 ( 3 column )
+=================================================================
+*/
+
+/* 상태 창 위치 설정 */
 .status-bar {
   display: flex;
   position: fixed;
@@ -8,23 +14,30 @@
   box-sizing: border-box;
 }
 
+/* column 간 위치 조정 */
 .status-bar__coloumn {
   width: 33%;
 }
 
+/* 왼쪽 column 텍스트 margin */
 .status-bar__coloumn:first-child span {
   margin-right: 5px;
 }
+
+/* 가운데 column 시간 위치 조정 */
 .status-bar__coloumn:nth-child(2) {
   display: flex;
   justify-content: center;
 }
+
+/* 오른쪽 column 위치 조정 */
 .status-bar__coloumn:last-child {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
+/* 오른쪽 column 베터리 아이콘 margin */
 .status-bar__coloumn .fa-battery-full {
   margin: 0px 5px;
 }
